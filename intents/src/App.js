@@ -1,20 +1,26 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./icons.js";
-import LoginPage from "./screens/LoginPage";
-import ParkBlogPage from "./screens/ParkBlogPage";
-import ParkInfoPage from "./screens/ParkInfoPage";
-import ParksPage from "./screens/ParksPage";
+import LoginPage from "./pages/LoginPage";
+import ParkBlogPage from "./pages/ParkBlogPage";
+import ParkInfoPage from "./pages/ParkInfoPage";
+import ParksPage from "./pages/ParksPage";
 import "./style.css";
 
 function App() {
   return (
     <Router>
-      <Route path="/" exact component={LoginPage} />
+
+      <Route path="/" exact component={LoginPage || 
+        //if auth = true
+        ParksPage} />
+      <Switch>
       <Route path="/LoginPage/" exact component={LoginPage} />
       <Route path="/ParkBlogPage/" exact component={ParkBlogPage} />
       <Route path="/ParkInfoPage/" exact component={ParkInfoPage} />
       <Route path="/ParksPage/" exact component={ParksPage} />
+      </Switch>
+
     </Router>
   );
 }
