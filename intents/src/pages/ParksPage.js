@@ -6,13 +6,7 @@ import Header from "../components/Header";
 function ParksPage(props) {
   return (
     <Container>
-      <ParksPageScroll
-        style={{
-          height: 896,
-          width: 414,
-          marginTop: 147
-        }}
-      ></ParksPageScroll>
+
       <Header
         style={{
           height: 147,
@@ -20,6 +14,16 @@ function ParksPage(props) {
           marginTop: -1043
         }}
       ></Header>
+
+      <ParksPageScroll
+        style={{
+          height: 896,
+          width: 414,
+          marginTop: 147
+        }}
+      ></ParksPageScroll>
+
+
     </Container>
   );
 }
