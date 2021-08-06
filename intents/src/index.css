@@ -3,6 +3,9 @@
   src: url("https://fonts.google.com/specimen/Saira+Stencil+One?query=saira+st#standard-styles") format("truetype");
 }
 
+*{
+  font-family: "saira-stencil-one-regular";
+}
 
 body {
   font-family: "saira-stencil-one-regular";
@@ -20,17 +23,20 @@ code {
 }
 
 html{
+  
   font-family: "saira-stencil-one-regular";
   background-color: rgba(49,65,49,1);
 }
 
 #h-in{
-  font-family: "saira-stencil-one-regular";
+  font-family: courier;
   color: #E0A100;
   font-size: 48px;
   bottom:0;
 }
 #h-tents{
-  font-family: courier;
+  font-family: "saira-stencil-one-regular";
+  font-weight: lighter;
+
   color:#202020
 }

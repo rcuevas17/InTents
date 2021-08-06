@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 function UserNameInput(props) {
   return (
     <Container {...props}>
-      <Username>USERNAME</Username>
+      <Username>EMAIL</Username>
       <InputStyle placeholder="Input"></InputStyle>
     </Container>
   );
