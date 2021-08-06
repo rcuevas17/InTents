@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 function Header(props) {
   return (
     <Container {...props}>
-      <Header1 style={{textAlign:"center",}}><h1><a href="./" id="h-in">IN<b id="h-tents">TENTS</b></a></Header1>
+      <Header1 style={{textAlign:"center",}}><h1><a href="./" id="h-in">IN<b id="h-tents">TENTS</b></a></h1></Header1>
     </Container>
   );
 }

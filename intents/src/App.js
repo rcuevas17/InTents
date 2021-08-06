@@ -1,11 +1,13 @@
 import React from "react";
-import { BrowserRouter, Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./icons.js";
+import "./style.css";
+
+import Header from "./components/Header.js";
 import LoginPage from "./pages/LoginPage";
 import ParkBlogPage from "./pages/ParkBlogPage";
 import ParkInfoPage from "./pages/ParkInfoPage";
 import ParksPage from "./pages/ParksPage";
-import "./style.css";
 
 import {
   ApolloClient,
@@ -13,18 +15,33 @@ import {
   ApolloProvider,
   createHttpLink,
 } from '@apollo/client';
-
 import { setContext } from '@apollo/client/link/context';
 
-import Header from "./components/Header.js";
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
 
+const authLink = setContext((_, { headers }) => {
+  // get the authentication token from local storage if it exists
+  const token = localStorage.getItem('id_token');
+  // return the headers to the context so httpLink can read them
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
 
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
     <Header/> 
-      {/* if auth = true */}
 
       <Route path="/" exact component={LoginPage || 
         //if auth = true
@@ -36,7 +53,7 @@ function App() {
       <Route path="/parks" exact component={ParksPage} />
       </Switch>
 
-    </BrowserRouter>
+    </Router>
   );
 }
 
