@@ -5,6 +5,7 @@
 
 
 body {
+  font-family: "saira-stencil-one-regular";
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -16,4 +17,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html{
+  font-family: "saira-stencil-one-regular";
+  background-color: rgba(49,65,49,1);
+}
+
+#h-in{
+  font-family: "saira-stencil-one-regular";
+  color: #E0A100;
+  font-size: 48px;
+  bottom:0;
+}
+#h-tents{
+  font-family: courier;
+  color:#202020
 }
