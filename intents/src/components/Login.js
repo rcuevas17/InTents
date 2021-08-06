@@ -47,82 +47,82 @@ const Container = styled.div`
 `;
 
 const ButtonOverlay = styled.button`
-//  display: block;
-//  background: none;
-//  height: 100%;
-//  width: 100%;
-//  border:none
+ // display: block;
+  background: none;
+  height: 100%;
+  width: 100%;
+  border:none
  `;
 const Tents1 = styled.span`
-  // font-family: Saira Stencil One;
-  // font-style: normal;
-  // font-weight: 400;
-  // color: rgba(32,32,32,1);
-  // font-size: 42px;
-  // width: 182px;
-  // height: 54px;
-  // text-align: left;
-  // margin-left: 93px;
+   font-family: Saira Stencil One;
+   font-style: normal;
+   font-weight: 400;
+   color: rgba(32,32,32,1);
+   font-size: 42px;
+   width: 182px;
+   height: 54px;
+   text-align: left;
+   margin-left: 93px;
 `;
 
 const Tents1Filler = styled.div`
-  // flex: 1 1 0%;
-  // flex-direction: row;
-  // display: flex;
+   flex: 1 1 0%;
+   flex-direction: row;
+   display: flex;
 `;
 
 const In1 = styled.span`
-  // font-family: Saira Stencil One;
-  // font-style: normal;
-  // font-weight: 400;
-  // color: rgba(224,161,0,1);
-  // font-size: 42px;
-  // width: 93px;
-  // height: 54px;
-  // text-align: right;
-  // margin-right: 182px;
+   font-family: Saira Stencil One;
+   font-style: normal;
+   font-weight: 400;
+   color: rgba(224,161,0,1);
+   font-size: 42px;
+   width: 93px;
+   height: 54px;
+   text-align: right;
+   margin-right: 182px;
 `;
 
 const Tents1Row = styled.div`
-  // height: 54px;
-  // flex-direction: row;
-  // display: flex;
-  // margin-top: 50px;
+   height: 54px;
+   flex-direction: row;
+   display: flex;
+   margin-top: 50px;
 `;
 
 const Button1 = styled.div`
-  // width: 199px;
-  // height: 47px;
-  // background-color: rgba(32,32,32,1);
-  // border-radius: 5px;
-  // flex-direction: column;
-  // display: flex;
-  // margin-top: 221px;
-  // margin-left: 38px;
-  // border: none;
-  // box-shadow: 3px 3px 5px  1px rgba(0,0,0,1) ;
+  width: 199px;
+  height: 47px;
+  background-color: rgba(32,32,32,1);
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  margin-top: 221px;
+  margin-left: 38px;
+  border: none;
+  box-shadow: 3px 3px 5px  1px rgba(0,0,0,1) ;
 `;
 
 const Login1 = styled.span`
-  // font-family: Saira Stencil One;
-  // font-style: normal;
-  // font-weight: 400;
-  // color: rgba(224,161,0,1);
-  // font-size: 25px;
-  // width: 74px;
-  // height: 39px;
-  // margin-top: 4px;
-  // margin-left: 63px;
+  font-family: Saira Stencil One;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(224,161,0,1);
+  font-size: 25px;
+  width: 74px;
+  height: 39px;
+  margin-top: 4px;
+  margin-left: 63px;
 `;
 
 const Signup = styled.span`
   font-family: Saira Stencil One;
-  // font-style: normal;
-  // font-weight: 400;
-  // color: rgba(32,32,32,1);
-  // font-size: 20px;
-  // margin-top: 114px;
-  // margin-left: 104px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(32,32,32,1);
+  font-size: 20px;
+  margin-top: 114px;
+  margin-left: 104px;
 `;
 
 export default Login;
