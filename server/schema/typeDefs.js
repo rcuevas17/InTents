@@ -2,46 +2,54 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
   type User {
-    _id: ID!
-    username: String!
-    email: String!
-    bookCount: Int
-    savedBooks:[Book]
-  }
-  
-  type Book {
-    bookId: ID!
-    authors: [String]
-    title: String!
-    description: String!
-    image: String!
-    link: String!
+    _id: ID
+    email: String
+    password: String
+    post: [Post]!
   }
 
+  type Park {
+    _id: ID
+    fullName: String
+    parkCode: String
+    state: String
+    post: [Post]!
+  }
+
+  type Post {
+    _id: ID
+    postTxt: String
+    postAuthor: String
+    created: String
+    comments: [Comment]!
+  }
+  type Comment {
+    _id: ID
+    commentTxt: String
+    commentAuthor: String
+    createdAt: Date
+  }
   type Auth {
-    token:ID!
-    user:User!
+    token: ID!
+    user: User
   }
 
-  type Query {
+  type Query{
+    users: [User]
+    user(email: String!): User
+    post(email: String): [Post]
+    Post(postId: ID!): Post
     me: User
   }
 
-  type Mutation {
+  type Mutation{
+    addUser(email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addUser(email: String!, username: String!, password:String!): Auth
-    saveBook(bookData:BookInput!): User
-    removeBook(bookId:ID!): User
-  }
-
-  input BookInput{
-    bookId: String
-    authors: [String]
-    title: String
-    description: String
-    image: String
-    link: String
-  }
-`;
+    addPost(postTxt: String!): Post
+    addComment(postId:ID!, commentTxt: String!): Post
+    removePost(postId) ID!
+: Post
+    removeComment(postId: ID!, commentId: ID!): Post  }
+`
 
 module.exports = typeDefs;

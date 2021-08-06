@@ -5,7 +5,11 @@
 
 *{
   font-family: "saira-stencil-one-regular";
+  /* font-weight: lighter; */
+  
 }
+
+
 
 body {
   font-family: "saira-stencil-one-regular";
@@ -26,17 +30,23 @@ html{
   
   font-family: "saira-stencil-one-regular";
   background-color: rgba(49,65,49,1);
+  background: radial-gradient(ellipse at center, )
 }
 
 #h-in{
+  font-weight:;
+  font-family: "saira-stencil-one-regular";
   font-family: courier;
   color: #E0A100;
   font-size: 48px;
   bottom:0;
 }
+
 #h-tents{
   font-family: "saira-stencil-one-regular";
+  /* font-family: courier; */
   font-weight: lighter;
+  color: #E0A100;
 
   color:#202020
 }
