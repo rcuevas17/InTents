@@ -4,11 +4,16 @@ const blogSchema = require('./Blog')
 
 const parkSchema = new Schema(
     {
-        fullname: {
+        fullName: {
             type: String,
             required: true,
             unique: true,
         },
+        parkCode: {
+            type: String,
+            required: true,
+
+        }
         
     }
 )
