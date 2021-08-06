@@ -18,8 +18,10 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
 `;
+
+const Search = styled.div``
+
 
 const Header1 = styled.div`
   width: 100%;
