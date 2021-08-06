@@ -8,7 +8,7 @@ Am online blog to track and post about national parks across the United States.
 
 ```
 AS A USER
-I WANT to search for a for a national park
+I WANT to search for a national park
 SO THAT I can save that park to my account
 I WANT to create a blog post for a park
 SO THAT I can review that particular park
